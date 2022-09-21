@@ -1,0 +1,34 @@
+import React from "react";
+import { IonButton, IonCard, IonCardContent, IonContent, IonFooter, IonGrid, IonHeader, IonPage, IonTitle, IonToolbar } from "@ionic/react";
+import Header from "../components/Header";
+import { warningOutline } from "ionicons/icons"
+
+const AdresHuisartsenpostGeenAuth:React.FC = () =>{
+
+    return(
+        <IonPage>
+            <IonHeader>
+                <IonToolbar color="primary" className="ion-text-center">
+                    <IonTitle>SPOED!!!</IonTitle>
+                </IonToolbar>
+            </IonHeader>
+            <IonContent>
+                <IonGrid>
+                    <IonCard >
+                        <IonCardContent>
+                        <h2>Ga naar deze medische post. Men is op de hoogte van uw komst:</h2><br/>
+                            <b>Adres:</b><br/>
+                            Kranepoort 4,<br/>
+                            2831 AK Gouderak
+                        </IonCardContent>
+                    </IonCard>
+                </IonGrid>
+            </IonContent>
+            <IonFooter class="ion-text-center">
+          <IonButton routerLink="/page/VervolgschermSpoed" expand="full">Terug</IonButton>
+        </IonFooter>
+        </IonPage>
+    );
+}
+
+export default AdresHuisartsenpostGeenAuth;
